@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RepairBalance" />
+		<Description value="Changing resources for repairing items" />
+		<Author value="BlackRabbit" />
+		<Version value="1.0" />
+		<Website value="https://community.7daystodie.com/profile/79194-blackrabbitmsk/" />
+	</ModInfo>
+</xml>

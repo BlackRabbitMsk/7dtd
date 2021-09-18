@@ -1,0 +1,91 @@
+<configs>
+
+	<append xpath="/recipes">
+	
+		<!-- Ремонт стальных инструментов -->
+		<recipe name="resourceSteelToolRepairKit" count="1" tags="perkMiner69r,learnable">
+			<ingredient name="meleeToolAllSteelParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт электроинструментов -->
+		<recipe name="resourceMotorToolRepairKit" count="1" tags="perkMiner69r,learnable">
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт легкой брони -->
+		<recipe name="resourceLightArmorRepairKit" count="1" tags="perkLightArmor,learnable">
+			<ingredient name="armorMilitarySetParts" count="2"/>
+			<ingredient name="resourceLeather" count="1"/>
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт тяжелой брони -->
+		<recipe name="resourceHeavyArmorRepairKit" count="1" tags="perkHeavyArmor,learnable">
+			<ingredient name="armorSteelSetParts" count="2"/>
+			<ingredient name="resourceLeather" count="1"/>
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт пистолетов -->
+		<recipe name="resourcePistolRepairKit" count="1" tags="perkGunslinger,learnable">
+			<ingredient name="gunHandgunT1PistolParts" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт дробовиков -->
+		<recipe name="resourceShotgunRepairKit" count="1" tags="perkBoomstick,learnable">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт автоматического оружия -->
+		<recipe name="resourceAutomaticWeaponRepairKit" count="1" tags="perkMachineGunner,learnable">
+			<ingredient name="gunMGT1AK47Parts" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт винтовок -->
+		<recipe name="resourceRifleRepairKit" count="1" tags="perkDeadEye,learnable">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт транспорта -->
+		<!-- <recipe name="resourceVehiclesRepairKit" count="1" tags="perkGreaseMonkey,learnable"> -->
+		    <!-- <ingredient name="resourceForgedIron" count="20"/> -->
+			<!-- <ingredient name="resourceElectricParts" count="5"/> -->
+			<!-- <ingredient name="resourceMechanicalParts" count="5"/> -->
+			<!-- <ingredient name="resourceOil" count="1"/> -->
+			<!-- <ingredient name="resourceScrapPolymers" count="5"/> -->
+		<!-- </recipe> -->
+
+		<!-- Ремонт луков -->
+		<recipe name="resourceBowRepairKit" count="1" tags="perkArchery,learnable">
+			<ingredient name="gunBowT1WoodenBowParts" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceForgedIron" count="1"/>
+		</recipe>
+		
+		<!-- Ремонт туррелей -->
+		<recipe name="resourceJunkRepairKit" count="1" tags="perkTurrets,learnable">
+			<ingredient name="gunBotRoboticsParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+	</append>
+</configs>

@@ -1,0 +1,27 @@
+<configs>
+
+	<!-- <set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='RecipeTagUnlocked'and @level='1,5']/@tags">vehicleWheels,vehicleBicycleChassis,vehicleBicycleHandlebars,resourceVehiclesRepairKit</set> -->
+	
+	<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='1,5']" name = "tags">meleeToolRepairT1ClawHammer,meleeToolAxeT1IronFireaxe,meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,resourceSteelToolRepairKit</set>
+	
+	<insertAfter xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='1,5']">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="resourceMotorToolRepairKit"/>
+	</insertAfter>
+	
+	<set xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots,resourceLightArmorRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots,resourceHeavyArmorRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">gunHandgunT1Pistol,resourcePistolRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">gunShotgunT1DoubleBarrel,resourceShotgunRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">gunMGT1AK47,resourceAutomaticWeaponRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">gunRifleT1HuntingRifle,resourceRifleRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">gunBowT1WoodenBow,gunBowT1IronCrossbow,resourceBowRepairKit</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @operation='base_set' and @level='1,5']/@tags">gunBotT1JunkSledge,resourceJunkRepairKit</set>
+	
+</configs>

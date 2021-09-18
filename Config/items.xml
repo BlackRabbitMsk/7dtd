@@ -1,0 +1,559 @@
+<configs>
+	
+	<!-- Изменение стака обычного набора инструментов -->
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='Stacknumber']/@value">50</set>
+	
+	<append xpath="/items">
+	
+		<!-- Ремонт стальных инструментов -->
+		<item name="resourceSteelToolRepairKit">
+			<property name="UnlockedBy" value="perkMiner69r,ToolsRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="450"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="tool"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="78E766"/>
+		</item>
+		
+		<!-- Ремонт электроинструментов -->
+		<item name="resourceMotorToolRepairKit">
+			<property name="UnlockedBy" value="perkMiner69r,ToolsRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="600"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="electric_power"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="78E766"/>
+		</item>
+		
+		<!-- Ремонт легкой брони -->
+		<item name="resourceLightArmorRepairKit">
+			<property name="UnlockedBy" value="perkLightArmor,ArmorRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="450"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="light_armor2"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="FFCF72"/>
+		</item>
+		
+		<!-- Ремонт тяжелой брони -->
+		<item name="resourceHeavyArmorRepairKit">
+			<property name="UnlockedBy" value="perkHeavyArmor,ArmorRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="450"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="armor_iron"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="FFCF72"/>
+		</item>
+		
+		<!-- Ремонт пистолетов -->
+		<item name="resourcePistolRepairKit">
+			<property name="UnlockedBy" value="perkGunslinger,WeaponRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="300"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="gunslinger"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="668AE7"/>
+		</item>
+		
+		<!-- Ремонт дробовиков -->
+		<item name="resourceShotgunRepairKit">
+			<property name="UnlockedBy" value="perkBoomstick,WeaponRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="450"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="shotgun"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="668AE7"/>
+		</item>
+		
+		<!-- Ремонт автоматического оружия -->
+		<item name="resourceAutomaticWeaponRepairKit">
+			<property name="UnlockedBy" value="perkMachineGunner,WeaponRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="600"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="rifle"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="668AE7"/>
+		</item>
+		
+		<!-- Ремонт винтовок -->
+		<item name="resourceRifleRepairKit">
+			<property name="UnlockedBy" value="perkDeadEye,WeaponRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="600"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="map_cursor"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="668AE7"/>
+		</item>
+		
+		<!-- Ремонт луков -->
+		<item name="resourceBowRepairKit">
+			<property name="UnlockedBy" value="perkArchery,WeaponRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="300"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="weapon_smithing"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="668AE7"/>
+		</item>
+		
+		<!-- Ремонт транспорта - временно не используется -->
+		<!-- <item name="resourceVehiclesRepairKit"> -->
+			<!-- <property name="UnlockedBy" value="perkGreaseMonkey,AdvancedRepairKitSchematic"/> -->
+			<!-- <property name="HoldType" value="45"/> -->
+			<!-- <property name="Tags" value="junk"/> -->
+			<!-- <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/> -->
+			<!-- <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/> -->
+			<!-- <property name="Material" value="Msteel"/> -->
+			<!-- <property name="Stacknumber" value="50"/>  -->
+			<!-- <property name="EconomicValue" value="450"/> -->
+			<!-- <property name="RepairTime" value="5"/> -->
+			<!-- <property name="RepairAmount" value="32000"/> -->
+			<!-- <property name="Group" value="Resources"/> -->
+			<!-- <property name="ItemTypeIcon" value="service"/> -->
+			<!-- <property name="CustomIcon" value="resourceRepairKit"/> -->
+			<!-- <property name="CustomIconTint" value="FF90D3"/> -->
+		<!-- </item> -->
+		
+		<!-- Ремонт туррелей -->
+		<item name="resourceJunkRepairKit">
+			<property name="UnlockedBy" value="perkTurrets,AdvancedRepairKitSchematic"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> 
+			<property name="EconomicValue" value="600"/>
+			<property name="RepairTime" value="5"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+			<property name="ItemTypeIcon" value="electric_turret"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="FF90D3"/>
+		</item>
+	</append>
+	
+	<!-- БАЛАНСИРОВКА ПРЕДМЕТОВ (изменено: ресурс ремонта, количество частей при разборе, экономика -->
+	<!-- Изменен ресурс ремонта в зависимости от типа предмета -->
+	<!-- Изменено количество частей при разборе -->
+	<!-- Изменена стоимость предмета - стоимость части*количество при крафте -->
+	
+	<!-- Ракетница -->
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='RepairTools']/@value">MRocketLauncherParts</set>
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='EconomicValue']/@value">1800</set> <!-- 4 части по 450 -->
+	
+	<!-- Автоматическое оружие -->
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='RepairTools']/@value">resourceAutomaticWeaponRepairKit</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='EconomicValue']/@value">2700</set> <!-- 6 частей по 450 -->
+	
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='RepairTools']/@value">resourceAutomaticWeaponRepairKit</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='EconomicValue']/@value">2250</set> <!-- 5 частей по 450 -->
+	
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='RepairTools']/@value">resourceAutomaticWeaponRepairKit</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='EconomicValue']/@value">1800</set> <!-- 4 части по 450 -->
+	
+	<!-- Пистолеты -->
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='RepairTools']/@value">resourcePistolRepairKit</set>
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='EconomicValue']/@value">1500</set> <!-- 6 частей по 250 -->
+	
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='RepairTools']/@value">resourcePistolRepairKit</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='EconomicValue']/@value">1250</set> <!-- 5 частей по 250 -->
+	
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='RepairTools']/@value">resourcePistolRepairKit</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='EconomicValue']/@value">1250</set> <!-- 5 частей по 250 -->
+	
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='RepairTools']/@value">resourcePistolRepairKit</set>
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='EconomicValue']/@value">1000</set> <!-- 4 части по 250 -->
+
+	<!-- Винтовки -->
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='RepairTools']/@value">resourceRifleRepairKit</set> 
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='EconomicValue']/@value">2100</set> <!-- 6 частей по 350 -->
+	
+	<set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@name='RepairTools']/@value">resourceRifleRepairKit</set> 
+	<set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='RepairTools']/@value">resourceRifleRepairKit</set> 
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='EconomicValue']/@value">1400</set> <!-- 4 части по 350 -->
+	
+	<!-- Дробовики -->
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='RepairTools']/@value">resourceShotgunRepairKit</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='EconomicValue']/@value">2100</set> <!-- 6 частей по 350 -->
+	
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='RepairTools']/@value">resourceShotgunRepairKit</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='RepairTools']/@value">resourceShotgunRepairKit</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='EconomicValue']/@value">1400</set> <!-- 4 части по 350 -->
+	
+	<!-- Арбалеты и луки -->
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='RepairTools']/@value">resourceBowRepairKit</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='EconomicValue']/@value">1250</set> <!-- 5 частей по 250 -->
+	
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='RepairTools']/@value">resourceBowRepairKit</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='EconomicValue']/@value">1000</set> <!-- 4 части по 250 -->
+
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='RepairTools']/@value">resourceBowRepairKit</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='EconomicValue']/@value">1250</set> <!-- 5 частей по 250 -->
+	
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='RepairTools']/@value">resourceBowRepairKit</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='EconomicValue']/@value">1000</set> <!-- 4 части по 250 -->
+	
+	<!-- Туррели -->
+	<set xpath="/items/item[@name='gunBotT3JunkDrone']/property[@name='RepairTools']/@value">resourceJunkRepairKit</set>
+	
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='RepairTools']/@value">resourceJunkRepairKit</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='EconomicValue']/@value">2250</set> <!-- 4 части по 450 + 450 (за тир) -->
+	
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='RepairTools']/@value">resourceJunkRepairKit</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='EconomicValue']/@value">1800</set> <!-- 4 части по 450 -->
+	
+	<!-- Электродубины -->
+	<set xpath="/items/item[@name='meleeWpnBatonT1JunkBaton']/property[@name='RepairTools']/@value">meleeWpnBatonT2StunBatonParts</set>
+		
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='RepairTools']/@value">meleeWpnBatonT2StunBatonParts</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='EconomicValue']/@value">1000</set> <!-- 4 части по 250 -->
+	
+	<set xpath="/items/item[@name='meleeWpnBatonT3PlasmaBaton']/property[@name='RepairTools']/@value">meleeWpnBatonT2StunBatonParts</set>
+	
+	<!-- Мачете -->
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='RepairTools']/@value">meleeWpnBladeT3MacheteParts</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='EconomicValue']/@value">1250</set> <!-- 5 частей по 250 -->
+	
+	<!-- Стальное копье -->
+	<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='EconomicValue']/@value">1250</set> <!-- 5 частей по 250 -->
+	<insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='EconomicValue']">
+		<property name="RepairTools" value="meleeWpnSpearT3SteelSpearParts"/>
+	</insertAfter>
+	
+	<!-- Стальной кастет -->
+	<insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='Material']">
+		<property name="Weight" value="3"/>
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='HoldType']">
+		<property name="EconomicValue" value="1250"/> <!-- 5 частей по 250 -->
+	</insertAfter>
+	<insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='EconomicValue']">
+		<property name="RepairTools" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+	</insertAfter>
+	
+	<!-- Стальная дубина и кувалда -->
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='RepairTools']/@value">meleeWpnClubT3SteelClubParts</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='RepairTools']/@value">meleeWpnSledgeT3SteelSledgehammerParts</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<!-- Стальной инструмент -->
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='RepairTools']/@value">resourceSteelToolRepairKit</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='RepairTools']/@value">resourceSteelToolRepairKit</set>
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='RepairTools']/@value">resourceSteelToolRepairKit</set>
+	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	
+	<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='EconomicValue']/@value">1750</set> <!-- 5 частей по 350 -->
+	<insertAfter xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='EconomicValue']">
+		<property name="RepairTools" value="resourceSteelToolRepairKit"/>
+	</insertAfter>
+	
+	<!-- Броня -->
+	<set xpath="/items/item[@name='armorSteelMaster']/property[@name='RepairTools']/@value">resourceHeavyArmorRepairKit</set>
+	<set xpath="/items/item[@name='armorSteelMaster']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='armorSteelMaster']/property[@name='EconomicValue']/@value">1400</set> <!-- 4 части по 350 -->
+	<set xpath="/items/item[@name='armorSwatHelmet']/property[@name='RepairTools']/@value">resourceHeavyArmorRepairKit</set>
+	<set xpath="/items/item[@name='armorSwatHelmet']/property[@name='DescriptionKey']/@value">armorSteelGroupDesc</set>
+	<set xpath="/items/item[@name='armorSwatHelmet']/property[@name='EconomicValue']/@value">1400</set> <!-- 4 части по 350 -->
+
+	<set xpath="/items/item[@name='armorMilitaryMaster']/property[@name='RepairTools']/@value">resourceLightArmorRepairKit</set>
+	<set xpath="/items/item[@name='armorMilitaryMaster']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='armorMilitaryMaster']/property[@name='EconomicValue']/@value">1400</set> <!-- 4 части по 350 -->
+	
+	<!-- Тряпичной брони -->
+	<set xpath="/items/item[@name='armorClothMaster']/property[@name='RepairTools']/@value">resourceCloth</set>
+    <set xpath="/items/item[@name='armorScrapMaster']/property[@name='RepairTools']/@value">resourceScrapIron</set>
+	<set xpath="/items/item[@name='armorLeatherMaster']/property[@name='RepairTools']/@value">resourceLeather</set>
+	
+	<!-- Электроинструмент -->
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='RepairTools']/@value">resourceMotorToolRepairKit</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='EconomicValue']/@value">2250</set> <!-- 5 частей по 450 -->
+	
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='RepairTools']/@value">resourceMotorToolRepairKit</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='EconomicValue']/@value">2250</set> <!-- 5 частей по 450 -->
+	
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='RepairTools']/@value">resourceMotorToolRepairKit</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='Weight']/@value">3</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='EconomicValue']/@value">2250</set> <!-- 5 частей по 450 -->
+	
+	<!-- Транспорт - в процессе изучения -->
+		<!-- <set xpath="/items/item[@name='smallEngine']/property[@name='RepairTools']/@value">resourceVehiclesRepairKit</set> -->
+		
+		<!-- <set xpath="/items/item[@name='partsMaster']/property[@name='RepairTools']/@value">resourceVehiclesRepairKit</set> -->
+		
+		<!-- <insertAfter xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='EconomicValue']"> -->
+			<!-- <property name="RepairTools" value="resourceVehiclesRepairKit"/> -->
+		<!-- </insertAfter> -->
+		
+		
+	<!-- БАЛАНСИРОВКА РАЗБОРНЫХ ЧАСТЕЙ -->
+	<!-- Изменения размер стака - 100 для всех типо частей -->
+	<!-- Стоимость 1 части для продажи - динамика по использованию в игре. наиболее популяные дороже -->
+	
+	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='EconomicValue']/@value">450</set>
+	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">100</set>
+	
+	<insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Material']">
+		<property name="EconomicValue" value="250"/>
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Material']">
+		<property name="EconomicValue" value="350"/>
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Material']">
+		<property name="EconomicValue" value="350"/>
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Material']">
+		<property name="EconomicValue" value="250"/>
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='EconomicValue']/@value">450</set>
+	<insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+
+	<insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Material']">
+		<property name="EconomicValue" value="350"/>
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Material']">
+		<property name="EconomicValue" value="250"/>
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='EconomicValue']/@value">250</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+
+	<set xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='EconomicValue']/@value">250</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='EconomicValue']/@value">250</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='EconomicValue']/@value">250</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='EconomicValue']/@value">350</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+
+	<set xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='EconomicValue']/@value">350</set>
+	<insertAfter xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+		
+	<set xpath="/items/item[@name='armorMilitarySetParts']/property[@name='EconomicValue']/@value">350</set>
+	<insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='armorSteelSetParts']/property[@name='EconomicValue']/@value">350</set>
+	<insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+		
+	<set xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='EconomicValue']/@value">450</set>
+	<insertAfter xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='Material']">
+		<property name="Stacknumber" value="100"/>
+	</insertAfter>
+
+	<!-- КНИГИ РЕЦЕПТОВ ДЛЯ ОТКРЫТИЯ РЕМОНТНЫХ НАБОРОВ -->
+	<append xpath="/items">
+	
+		<item name="ArmorRepairKitSchematic">
+			<property name="DescriptionKey" value="ArmorRepairKitSchematicLongDesc"/>
+			<property name="EconomicValue" value="800"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="FFCF72"/>
+			<property name="Stacknumber" value="10"/> 
+			<property name="Unlocks" value="resourceLightArmorRepairKit"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceLightArmorRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceHeavyArmorRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+	
+		<item name="ToolsRepairKitSchematic">
+			<property name="DescriptionKey" value="ToolsRepairKitSchematicLongDesc"/>
+			<property name="EconomicValue" value="800"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="78E766"/>
+			<property name="Stacknumber" value="10"/> 
+			<property name="Unlocks" value="resourceSteelToolRepairKit"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceSteelToolRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceMotorToolRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+	
+		<item name="WeaponRepairKitSchematic">
+			<property name="DescriptionKey" value="WeaponRepairKitSchematicLongDesc"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="668AE7"/>
+			<property name="Stacknumber" value="10"/> 
+			<property name="Unlocks" value="resourcePistolRepairKit"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourcePistolRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceShotgunRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceAutomaticWeaponRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceRifleRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBowRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+	
+		<item name="AdvancedRepairKitSchematic">
+			<property name="DescriptionKey" value="AdvancedRepairKitSchematicLongDesc"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="Stacknumber" value="10"/> 
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="FF90D3"/>
+			<property name="Unlocks" value="resourceVehiclesRepairKit"/>
+			<effect_group tiered="false">
+				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceVehiclesRepairKit" operation="set" value="1"/> -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceJunkRepairKit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+	</append>
+	
+</configs>

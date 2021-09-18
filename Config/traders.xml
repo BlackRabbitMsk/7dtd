@@ -1,0 +1,16 @@
+<configs>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='tools']">
+		<item name="resourceSteelToolRepairKit" count="1,4"/>
+		<item name="resourceMotorToolRepairKit" count="1,4"/>
+		<item name="resourceLightArmorRepairKit" count="1,4"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4"/>
+		<item name="resourcePistolRepairKit" count="1,4"/>
+		<item name="resourceShotgunRepairKit" count="1,4"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,4"/>
+		<item name="resourceRifleRepairKit" count="1,4"/>
+		<!-- <item name="resourceVehiclesRepairKit" count="1,4"/> -->
+		<item name="resourceBowRepairKit" count="1,4"/>
+	</append>
+	
+</configs>

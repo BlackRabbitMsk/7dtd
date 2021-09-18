@@ -1,0 +1,201 @@
+<configs>
+
+	<!-- Удаляем обычные ремкомплекты из лута чтобы его перебалансировать -->
+	<remove xpath="/lootcontainers/lootgroup[@name='workbenchLoot']/item[@name='resourceRepairKit']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='automotive']/item[@name='resourceRepairKit']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='workingStiffsSub']/item[@name='resourceRepairKit']"/>
+	<remove xpath="/lootcontainers/lootcontainer[@id='50']/item[@name='resourceRepairKit']"/>
+	<remove xpath="/lootcontainers/lootcontainer[@id='90']/item[@name='resourceRepairKit']"/>
+	<remove xpath="/lootcontainers/lootcontainer[@id='124']/item[@name='resourceRepairKit']"/>
+	<remove xpath="/lootcontainers/lootcontainer[@id='125']/item[@name='resourceRepairKit']"/>
+	
+	<!-- Добавляем группу с добычей для Книг с рецептами -->
+	
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='grills']">
+		<lootgroup name="repairkBooks">
+			<item name="ArmorRepairKitSchematic"/>
+			<item name="ToolsRepairKitSchematic"/>
+			<item name="WeaponRepairKitSchematic"/>
+			<item name="AdvancedRepairKitSchematic"/>
+		</lootgroup>
+	</insertAfter>
+	
+	<!-- Добавляем в основную группу с книгами -->
+	<append xpath="/lootcontainers/lootgroup[@name='perkBooks']">
+		<item group="repairkBooks" count="1,2" prob="0.015"/>
+	</append>
+	
+	
+	<!-- Добавляем ремонтные комлекты в дроп -->
+	<!-- Верстак -->
+	<append xpath="/lootcontainers/lootgroup[@name='workbenchLoot']">
+		<item name="resourceRepairKit" count="1,2"/>
+		<item name="resourceSteelToolRepairKit" count="1,2"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,2"/>
+		<item name="resourceLightArmorRepairKit" count="1,2"/>
+		<item name="resourceRifleRepairKit" count="1,2"/>
+		<item name="ToolsRepairKitSchematic" count="1,2" prob="0.025"/>
+	</append>
+	
+	<!-- Авто -->
+	<append xpath="/lootcontainers/lootgroup[@name='workbenchLoot']">
+		<item name="resourceRepairKit" count="1,2"/>
+		<item name="resourceSteelToolRepairKit" count="1,2" prob="0.18"/>
+		<item name="resourceMotorToolRepairKit" count="1,2" prob="0.18"/>
+		<item name="resourceJunkRepairKit" count="1,2" prob="0.12"/>
+	</append>
+	
+	<!-- Ящик стройматериалов -->
+	<append xpath="/lootcontainers/lootgroup[@name='workingStiffsSub']">
+		<item name="resourceSteelToolRepairKit" count="1,2" prob="0.18"/>
+		<item name="resourceMotorToolRepairKit" count="1,2" prob="0.12"/>
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.2"/>
+		<item name="resourceJunkRepairKit" count="1,2" prob="0.12"/>
+		<item name="AdvancedRepairKitSchematic" count="1,2" prob="0.05"/>
+		<item name="ToolsRepairKitSchematic" count="1,2" prob="0.015"/>
+	</append>
+	
+	<!-- Оружейный сейф -->
+	<append xpath="/lootcontainers/lootcontainer[@id='34']">
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.15"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.15"/>
+	</append>
+	
+	<!-- Ящик аирдропа -->
+	<append xpath="/lootcontainers/lootcontainer[@id='34']">
+		<item name="ArmorRepairKitSchematic" prob="0.05"/>
+		<item name="ToolsRepairKitSchematic" prob="0.05"/>
+		<item name="WeaponRepairKitSchematic" prob="0.05"/>
+		<item name="AdvancedRepairKitSchematic" prob="0.05"/>
+	</append>
+
+	<!-- Ящик Shotgun Mesiah -->
+	<append xpath="/lootcontainers/lootcontainer[@id='50']">
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.1"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.07"/>
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.1"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.07"/>
+		<item name="resourceBowRepairKit" count="1,2" prob="0.5"/>
+		<item name="resourceLightArmorRepairKit" count="1,2" prob="0.1"/>
+		<item name="WeaponRepairKitSchematic" count="1,2" prob="0.005"/>
+	</append>
+	
+	<!-- Армейский грузовик -->
+	<append xpath="/lootcontainers/lootcontainer[@id='83']">
+		<item name="resourceLightArmorRepairKit" count="1,4" prob="0.3"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4" prob="0.3"/>
+		<item name="resourcePistolRepairKit" prob="0.3"/>
+		<item name="resourceShotgunRepairKit" prob="0.3"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,3" prob="0.2"/>
+		<item name="resourceRifleRepairKit" count="1,3" prob="0.2"/>
+		<item name="WeaponRepairKitSchematic" count="1,2" prob="0.015"/>
+	</append>
+		
+	<!-- Ящик с запчастями -->
+	<append xpath="/lootcontainers/lootcontainer[@id='90']">
+		<item name="resourceRepairKit" count="5,20" prob="0.2"/>
+		<item name="resourceBowRepairKit" count="1,3" prob="0.3"/>
+		<item name="resourceJunkRepairKit" count="1,2" prob="0.15"/>
+		<item name="resourceLightArmorRepairKit" count="1,2" prob="0.1"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,2" prob="0.1"/>
+		<item name="ToolsRepairKitSchematic" count="1,2" prob="0.015"/>
+	</append>
+	
+	<!-- Сумка с боеприпасами (маленькая, большая) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='100']">
+		<item name="resourceLightArmorRepairKit" count="1,4" prob="0.3"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4" prob="0.3"/>
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.15"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.15"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootcontainer[@id='101']">
+		<item name="resourceLightArmorRepairKit" count="1,4" prob="0.15"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4" prob="0.15"/>
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.3"/>
+		<item name="WeaponRepairKitSchematic" count="1,2" prob="0.015"/>
+	</append>
+	
+	<!-- Куча боеприпасов (маленькая, средняя, большая) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='108']">
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.03"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.03"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.015"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.015"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootcontainer[@id='109']">
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.05"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.05"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.03"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.03"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootcontainer[@id='110']">
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.05"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.05"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.03"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.03"/>
+		<item name="resourceLightArmorRepairKit" count="1,4" prob="0.05"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4" prob="0.05"/>
+	</append>
+	
+	<!-- Ящик с инструментами на колесах -->
+	<append xpath="/lootcontainers/lootcontainer[@id='124']">
+		<item name="resourceRepairKit" count="1,5"/>
+		<item name="resourceSteelToolRepairKit" prob="0.3"/>
+		<item name="resourceMotorToolRepairKit" prob="0.1"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4" prob="0.3"/>
+		<item name="resourceJunkRepairKit" count="1,4" prob="0.15"/>
+		<item name="resourcePistolRepairKit" prob="0.3"/>
+	</append>
+	
+	<!-- Ящик с инструментами настольный -->
+	<append xpath="/lootcontainers/lootcontainer[@id='125']">
+		<item name="resourceRepairKit" count="1,5"/>
+		<item name="resourceSteelToolRepairKit" prob="0.3"/>
+		<item name="resourceMotorToolRepairKit" prob="0.1"/>
+		<item name="resourceLightArmorRepairKit" count="1,4" prob="0.3"/>
+		<item name="resourceJunkRepairKit" count="1,4" prob="0.15"/>
+	</append>
+	
+	<!-- Оружейный стенд - броня -->
+	<append xpath="/lootcontainers/lootcontainer[@id='137']">
+		<item name="resourceLightArmorRepairKit" count="1,4" prob="0.15"/>
+		<item name="resourceHeavyArmorRepairKit" count="1,4" prob="0.15"/>
+	</append>
+	
+	<!-- Оружейный стенд - оружие -->
+	<append xpath="/lootcontainers/lootcontainer[@id='138']">
+		<item name="resourcePistolRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceShotgunRepairKit" count="1,2" prob="0.3"/>
+		<item name="resourceAutomaticWeaponRepairKit" count="1,2" prob="0.15"/>
+		<item name="resourceRifleRepairKit" count="1,2" prob="0.15"/>
+	</append>
+
+	
+	<!-- AdvancedRepairKitSchematic -->
+	<!-- WeaponRepairKitSchematic -->
+	<!-- ToolsRepairKitSchematic -->
+	<!-- ArmorRepairKitSchematic -->
+	
+	<!-- resourceSteelToolRepairKit -->
+	<!-- resourceMotorToolRepairKit -->
+	<!-- resourceLightArmorRepairKit -->
+	<!-- resourceHeavyArmorRepairKit -->
+	<!-- resourcePistolRepairKit -->
+	<!-- resourceShotgunRepairKit -->
+	<!-- resourceAutomaticWeaponRepairKit -->
+	<!-- resourceRifleRepairKit -->
+	<!-- resourceBowRepairKit -->
+	<!-- resourceJunkRepairKit -->
+	
+	
+</configs>
